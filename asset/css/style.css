@@ -4,23 +4,20 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: "Lato", sans-serif;
 }
-
 
 header {
   display: flex;
   justify-content: center;
   background-color: rgba(224, 224, 224, 1);
-
 }
- 
+
 .container_menu {
   display: flex;
   width: 1112px;
-}  
+}
 .menu {
   display: flex;
   width: 100%;
@@ -42,22 +39,18 @@ header {
 img {
   width: 39px;
   margin: 22px 7px 18px 6px;
-   
 }
 
-
-
 .caixa_menu {
-  border: 1px solid black;  
-  
+  border: 1px solid black;
 }
 
 .lista_menu {
   display: flex;
   width: fit-content;
-  text-align:center;
+  text-align: center;
   white-space: nowrap;
-  margin: 15px 4px 13px 8px;
+  margin: 0px 0px 13px 8px;
 }
 
 .lista_menu div {
@@ -65,18 +58,17 @@ img {
   margin: 0px -11px 0px -15px;
 }
 
-.hamburguer, .fechar {
- 
-  display: none; 
+.hamburguer,.fechar {
+  display: none;
 }
 
 .section {
-  margin-top: 80px;  
+  margin-top: 26px;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
-  }
+}
 
 .super_container {
   display: flex;
@@ -92,7 +84,6 @@ img {
 }
 
 .caixa_nova {
-  
   flex-direction: column;
   margin: 30px 10px 546px 20px;
   padding: 20px 15px;
@@ -104,7 +95,8 @@ img {
 }
 
 .nova {
-  align-self: center;
+  text-align: -webkit-right;
+  margin-top: 20px;
 }
 
 .Nova_transacao {
@@ -115,7 +107,16 @@ img {
   font-weight: bold;
   font-size: 18px;
 }
+.container-main {
+  width: 400px;
+  height: 344px;
+  border: 1px solid #979797;
+  border-radius: 4px;
+}
 
+.caixa_principal {
+  margin: 0px 15px 0px 15px;
+}
 .caixa_tipo-transacao {
   width: 94.8%;
 }
@@ -132,6 +133,9 @@ option {
   width: 92.5%;
 }
 
+.botao {
+  margin: 0px 15px 0px 15px;
+}
 .botao_adiciona {
   width: 94.8%;
   margin-left: 10px;
@@ -139,12 +143,11 @@ option {
 
 .linha {
   display: none;
-  
 }
 
 .tipo {
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 3px;
 }
 
@@ -161,7 +164,7 @@ option {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 3px;
 }
 
@@ -178,11 +181,11 @@ option {
   width: 97.5%;
 }
 
-.lvalor {
+.llvalor {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 3px;
 }
 
@@ -232,27 +235,27 @@ th {
   font-weight: bold;
 }
 
- .rodape {
-    width: 100%;
-    border: 5px solid #333;
-    position: fixed;
-    bottom: 0;
+.rodape {
+  width: 100%;
+  border: 5px solid #333;
+  position: fixed;
+  bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
- 
- .controle_financeiro_menu {
-   margin: 0;
- }
   
+  .controle_financeiro_menu {
+    margin: 0;
+  }
+
   .caixa_menu {
-    border: 0; 
+    border: 0;
     margin: 32px;
   }
 
   .lista_menu {
     position: fixed;
-    top : 0px;
+    top: 0px;
     right: 0px;
     flex-direction: column;
     height: 100%;
@@ -260,100 +263,110 @@ th {
     color: white;
     text-align: left;
   }
-  
-  .lista_menu .divisor {
-    display :none;
-  }
-  
-  .hamburguer, .fechar {
-    display: block;
 
+  .lista_menu .divisor {
+    display: none;
   }
-  
+
+  .hamburguer.fechar {
+    display: block;
+  }
+
   .lista_menu {
     display: none;
   }
-  
+
   .caixa_menu:hover .lista_menu {
-     display: flex;
+    display: flex;
   }
 
-
   .section {
-    
     flex-direction: column;
-
   }
 
   .container {
     flex-direction: column;
   }
-  .container-main {
-    border: solid 2px blue;
-  }
   
+  .container-main {
+    border: 1px solid #979797;
+    width: 100%;
+    height: 190px;
+    align-self: center;
+  }
 
-  .caixa_nova {   
+  .nova {
+    justify-content: center;
     display: flex;
-    margin: 30px 10px 20px 20px;
+  }
+
+  .caixa_nova {
+    display: flex;
+
     width: 90%;
-    max-height: 344px; 
+    max-height: 344px;
     border: 1px solid #9c9c9c;
   }
   
+
   .Nova_transacao {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .Extrato_de_transacoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 43px;
   }
 
   .caixa_principal {
-    display: flex;   
+    display: flex;
     align-items: center;
+    margin: 0px 4px 0px 4px;
   }
-  
+
   .caixa_1 {
-    width: 25%;
-    margin: 0 20px;
+    width: 27%;
+    margin: 0 6px;
   }
-  
+
   .caixa_2 {
     width: 50%;
   }
-  
+
   .botao_adiciona {
     width: 26.8%;
-  }  
-  
-  .linha {
-    display: none;  
   }
 
-  
+  .botao {
+    margin-inline-start: auto;
+    width: 33%;
+    display: flex;
+  }
 
+  .linha {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 411px) {
- 
-  /*.controle_financeiro_menu {
-    width: 330%;
-    margin-left: 6.5px;
-    margin: 60px 5px 9px 20px;
-  }*/
+
+  
+  .section {
+    margin-top: -33px;
+  }
   
   .caixa_menu {
     border: 0;
     margin: 49px;
   }
 
-  /*img {
-    width: 39px;
-    margin: 26px 5px 57px 7px;
-
-  }*/
-
   .lista_menu {
     position: fixed;
-    top : 0px;
+    top: 0px;
     right: 0px;
     flex-direction: column;
     height: 100%;
@@ -361,27 +374,34 @@ th {
     color: white;
     text-align: left;
   }
-  
+
   .lista_menu .divisor {
-    display :none;
+    display: none;
   }
-  
-  .hamburguer, .fechar {
+
+  .hamburguer,
+  .fechar {
     display: block;
   }
-  
+
   .lista_menu {
     display: none;
   }
-  
+
   .caixa_menu:hover .lista_menu {
-     display: flex;
+    display: flex;
   }
-   
+
   .container {
     display: flex;
     flex-direction: column;
   }
+  
+  .container-main {
+      border: 0px solid #979797;
+  }
+  
+  
   
   
   .caixa_nova {
@@ -392,7 +412,7 @@ th {
   .Nova_transacao {
     display: none;
   }
-  
+
   .caixa_principal {
     flex-direction: column;
     padding: 26px 0px 0px 0px;
@@ -400,30 +420,36 @@ th {
     max-height: 631px;
     align-items: center;
     margin: 8px;
-    border: 0px solid #9c9c9c;   
+    border: 0px solid #9c9c9c;
   }
-  
+
   .caixa_1 {
     width: 100%;
-    margin: 0 20px;     
-    
+    margin: 0 20px;
   }
-  
-  .caixa_2{
+
+  .caixa_2 {
     width: 100%;
     margin: 0 20px;
-    
   }
   
+  .botao {
+     width: 95%;
+  }
   .botao_adiciona {
     width: 100%;
     margin-left: 0px;
   }
-   
-  #linha-horizontal {
-    width: 89%;
-    margin: 0 0px 0px 36px;
+
+ #linha-horizontal {
+    width: 95%;
+    height: -1px;
+    margin: 28px 0px 0px 7px;
     border: 1px solid #979797;
   }
+  
+  .Extrato_de_transacoes {
+    
+    margin-top: 173px;
+  }   
 }
-

@@ -13,113 +13,111 @@
 
   <!-- Inicio menu -->
   
-    <header>
-      <div class="container_menu">
-        <div class="ellipse">
-          <div class="container-logo">
-            <img src="./asset/img/Ellipse.png" />
-            <h2 class="controle_financeiro_menu">Controle financeiro</h2>
+  <header>
+    <div class="container_menu">
+      <div class="ellipse">
+        <div class="container-logo">
+          <img src="./asset/img/Ellipse.png" />
+          <h2 class="controle_financeiro_menu">Controle financeiro</h2>
+        </div>
+        <div class="caixa_menu">
+          <div>
+            <div class="hamburguer">
+              <img src="./asset/img/hamburgue.png" />
+            </div>
           </div>
-          <div class="caixa_menu">
-            <div>
-              <div class="hamburguer">
-                <img src="./asset/img/hamburgue.png" />
-              </div>
+          <div class="lista_menu">
+            <div class="fechar">
+              X
             </div>
-            <div class="lista_menu">
-              <div class="fechar">
-                X
-              </div>
-              <div>Cadastro de transações</div>
-              <div class="divisor">|</div>
-              <div>Limpar dados</div>
-            </div>
+            <div>Cadastro de transações</div>
+            <div class="divisor">|</div>
+            <div>Limpar dados</div>
           </div>
         </div>
       </div>
-    </header>
-  
+    </div>
+  </header>
+
   <!-- Fim menu -->
   <!-- Inicio conteudo -->
-    <div class="section">
-      <!-- Inicio caixa nova transação -->
-      <div class="container-main">
+  <div class="section">
+    <!-- Inicio caixa nova transação -->
+    <div class="container-main">
 
-        <div class="nova">
-          <h3 class="Nova_transacao"> Nova transação </h3>
-        </div>
-
-        <div class="caixa_principal">
-
-          <div class="caixa_1">
-            <label class="tipo" for="tipo de transação">Tipo de transação</label>
-
-            <select class="formu" id="tipo de transacao" name="tipo de  transação">
-              <option value="Compra">Compra</option>
-              <option value="Compra">Venda</option>
-            </select>
-          </div>
-
-          <div class="caixa_2">
-            <label class="nmercadoria" for="nmercadoria">Nome da mercadoria</label>
-            <input class="lmercadoria" type="text" id="nmercadoria" name="nome da mercadoria" placeholder="Input">
-          </div>
-
-          <div class="caixa_1">
-            <label class="llvalor" for="lvalor">Valor</label>
-            <input class="valor" type="text" id="lvalor" name="valor" placeholder="R$ 0,00">
-          </div>
-           
-        </div>
-         <div class="botao">
-              <button class="button1">Adicionar transação</button>
-            </div>
-        
+      <div class="nova">
+        <h3 class="Nova_transacao"> Nova transação </h3>
       </div>
-      <!-- Fim Caixa nova transação -->
+
+      <div class="caixa_principal">
+
+        <div class="caixa_1">
+          <label class="tipo" for="tipo de transação">Tipo de transação</label>
+
+          <select class="formu" id="tipo de transacao" name="tipo de  transação">
+            <option value="Compra">Compra</option>
+            <option value="Compra">Venda</option>
+          </select>
+        </div>
+
+        <div class="caixa_2">
+          <label class="nmercadoria" for="nmercadoria">Nome da mercadoria</label>
+          <input class="lmercadoria" type="text" id="nmercadoria" name="nome da mercadoria" placeholder="Input">
+        </div>
+
+        <div class="caixa_1">
+          <label class="llvalor" for="lvalor">Valor</label>
+          <input class="valor" type="text" id="lvalor" name="valor" placeholder="R$ 0,00">
+        </div>
+
+      </div>
+      <div class="botao">
+        <button class="button1">Adicionar transação</button>
+      </div>
       <div id="linha-horizontal"></div>
-
-      <!-- Inicio Extrato de transações -->
-      
-      <div>
-        <h3 class="Extrato_de_transacoes"> Extrato de transações</h3>
-        <table id="tab_transacao">
-            <tr>
-              <th></th>
-              <th>Meradoria</th>
-              <th style="text-align: right;">Valor</th>
-            </tr>
-            <tr>
-              <td> + </td>
-              <td> Lorem ipsum dolor sit amet consectetur </td>
-              <td style="text-align: right;">R$ 12.999,99</td>
-            </tr>
-            <tr>
-              <td> - </td>
-              <td>Quis nostrud exercitation</td>
-              <td style="text-align: right;">R$99,99</td>
-            </tr>
-            <tr>
-              <td style="width: 1%; text-align:center;border-bottom: double;"> + </td>
-              <td style="width: 70% ; text-align:left;border-bottom: double;"> Lorem ipsum</td>
-              <td style="width: 29% ; text-align:right; border-bottom: double;">R$ 9,99</td>
-            </tr>
-            <tr>
-              <th style="border: none;">
-              </th>
-              <th style=" border: none;">Total</th>
-              <th style="border: none; text-align: right;">R$12.909,99</th>
-            </tr>
-            <tr>
-              <th style="border: none;"></th>
-              <th style="border: none;"></th>
-              <th style="border: none; text-align: right;">[LUCRO]</th>
-            </tr>
-          </table>
-      </div>
-
-
     </div>
+    <!-- Fim Caixa nova transação -->
+
+    <!-- Inicio Extrato de transações -->
+
+    <div>
+      <h3 class="Extrato_de_transacoes"> Extrato de transações</h3>
+      <table id="tab_transacao">
+        <tr>
+          <th></th>
+          <th>Meradoria</th>
+          <th style="text-align: right;">Valor</th>
+        </tr>
+        <tr>
+          <td> + </td>
+          <td> Lorem ipsum dolor sit amet consectetur </td>
+          <td style="text-align: right;">R$ 12.999,99</td>
+        </tr>
+        <tr>
+          <td> - </td>
+          <td>Quis nostrud exercitation</td>
+          <td style="text-align: right;">R$99,99</td>
+        </tr>
+        <tr>
+          <td style="width: 1%; text-align:center;border-bottom: double;"> + </td>
+          <td style="width: 70% ; text-align:left;border-bottom: double;"> Lorem ipsum</td>
+          <td style="width: 29% ; text-align:right; border-bottom: double;">R$ 9,99</td>
+        </tr>
+        <tr>
+          <th style="border: none;">
+          </th>
+          <th style=" border: none;">Total</th>
+          <th style="border: none; text-align: right;">R$12.909,99</th>
+        </tr>
+        <tr>
+          <th style="border: none;"></th>
+          <th style="border: none;"></th>
+          <th style="border: none; text-align: right;">[LUCRO]</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
   <footer class="rodape"></footer>
 
 </body>
