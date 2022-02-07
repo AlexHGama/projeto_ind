@@ -11,7 +11,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: rgba(224, 224, 224, 1);
+  background-color: rgb(224, 20, 20);
 }
 
 .container_menu {
