@@ -12,11 +12,13 @@ header {
   display: flex;
   justify-content: center;
   background-color: rgba(224, 224, 224, 1);
+  width: 100%;
 }
 
 .container_menu {
-  display: flex;
-  width: 1112%;
+  display: flex;  
+  padding: 20px;
+  width: 100%;
 }
 .menu {
   display: flex;
@@ -30,19 +32,29 @@ header {
 .ellipse {
   display: flex;
   width: 100%;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  
 }
 .container-logo {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  align-content: stretch;
+  width: 60%;
+  margin-left: 80px;
 }
 img {
   width: 39px;
-  margin: 22px 7px 18px 6px;
+  margin: 22px 8px 18px 22px;
 }
 
 .caixa_menu {
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 40px;
 }
 
 .lista_menu {
@@ -325,7 +337,7 @@ th {
   .container_extrato {
     width: 100%
   } 
-  
+
   .Extrato_de_transacoes {
     display: flex;
     justify-content: center;
