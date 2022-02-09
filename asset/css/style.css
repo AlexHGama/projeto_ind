@@ -43,11 +43,11 @@ header {
   flex-direction: row;
   align-content: stretch;
   width: 60%;
-  margin-left: 80px;
+  margin-left: 73px;
 }
 img {
   width: 39px;
-  margin: 22px 8px 18px 22px;
+  margin: 22px 18px 18px 23px;
 }
 
 .caixa_menu {
@@ -283,7 +283,7 @@ th {
     border: 0;
     display: flex;
     align-items: center;
-    
+    background-color: #e0e0e0;
   }
 
   .lista_menu {
@@ -320,9 +320,8 @@ th {
   }
 
   .container-logo {
-    display: flex;
-    align-items: center;
-    width: 60%;
+    margin: inherit;
+    width: 100%;
   }
   .section {
     flex-direction: column;
