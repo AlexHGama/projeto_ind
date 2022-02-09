@@ -31,7 +31,7 @@ header {
 
 .ellipse {
   display: flex;
-  width: 100%;
+  width: 92%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -264,10 +264,25 @@ th {
   
   .controle_financeiro_menu {
     margin: 0;
+    padding-left: 20%;
+  }
+  .ellipse {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+   img {
+    width: 39px;
+    margin: 22px 0px 17px 0px;
   }
 
   .caixa_menu {
     border: 0;
+    display: flex;
+    align-items: center;
     
   }
 
@@ -297,7 +312,18 @@ th {
   .caixa_menu:hover .lista_menu {
     display: flex;
   }
+   
+  .container_menu {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+  }
 
+  .container-logo {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
   .section {
     flex-direction: column;
   }
@@ -380,15 +406,22 @@ th {
   .section {
     margin-top: -33px;
   }
-  
+  .controle_financeiro_menu{
+
+    padding-left: 10%;
+  }  
   .caixa_menu {
     border: 0;
-    margin: 49px;
+    
+  }
+   
+  .hamburguer, .fechar {
+    display: block;
   }
 
   .container_menu {
     display: flex;
-    width: 94%;
+    width: 100%;
   } 
   .lista_menu {
     position: fixed;
@@ -417,9 +450,9 @@ th {
     display: flex;
   }
 
-  .section {
+  /*.section {
     flex-direction: column;
-  }
+  }*/
 
   .container {
     flex-direction: column;
