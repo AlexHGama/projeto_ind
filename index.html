@@ -12,7 +12,7 @@
 <body>
 
   <!-- Inicio menu -->
-  
+  <div class="global">
   <header>
     <div class="container_menu">
       <div class="ellipse">
@@ -30,9 +30,13 @@
             <div class="fechar">
               X
             </div>
-            <div>Cadastro de transações</div>
+            <div>
+              <a href="lmercadoria" onclick="dirc_cursor_nome_mercadoria()">Cadastro de transações</a>
+            </div>
             <div class="divisor">|</div>
-            <div>Limpar dados</div>
+            <div>
+              <a href="Limpar dados" onclick="limpar()">Limpar dados</a>
+            </div>
           </div>
         </div>
       </div>
@@ -43,7 +47,7 @@
   <!-- Inicio conteudo -->
   <div class="section">
     <!-- Inicio caixa nova transação -->
-    <div class="container-main">
+    <div class="container_main" onsubmit="testacontainer_main(event);">
 
       <div class="nova">
         <h3 class="Nova_transacao"> Nova transação </h3>
@@ -56,18 +60,18 @@
 
           <select class="formu" id="tipo de transacao" name="tipo de  transação">
             <option value="Compra">Compra</option>
-            <option value="Compra">Venda</option>
+            <option value="Venda">Venda</option>
           </select>
         </div>
 
         <div class="caixa_2">
           <label class="nmercadoria" for="nmercadoria">Nome da mercadoria</label>
-          <input class="lmercadoria" type="text" id="nmercadoria" name="nome da mercadoria" placeholder="Input">
+          <input class="lmercadoria" type="text" id="nmercadoria" onfocus="this.value=''; "placeholder="Input"  onblur="testaCampoMercadoria(this.value)" required name="nome da mercadoria" placeholder="Input">
         </div>
 
         <div class="caixa_1">
           <label class="llvalor" for="lvalor">Valor</label>
-          <input class="valor" type="text" id="lvalor" name="valor" placeholder="R$ 0,00">
+          <input class="valor" type="text" id="lvalor" onblur="testaCampoValor(this.value)" required name="valor" placeholder="R$ 0,00">
         </div>
 
       </div>
@@ -82,44 +86,23 @@
 
     <div class="container_extrato">
       <h3 class="Extrato_de_transacoes"> Extrato de transações</h3>
-      <table id="tab_transacao">
+      <table class="tab_transacao">
+        
         <tr>
-          <th></th>
-          <th>Meradoria</th>
-          <th style="text-align: right;">Valor</th>
-        </tr>
-        <tr>
-          <td> + </td>
-          <td> Lorem ipsum dolor sit amet consectetur </td>
-          <td style="text-align: right;">R$ 12.999,99</td>
-        </tr>
-        <tr>
-          <td> - </td>
-          <td>Quis nostrud exercitation</td>
-          <td style="text-align: right;">R$99,99</td>
-        </tr>
-        <tr>
-          <td style="width: 1%; text-align:center;border-bottom: double;"> + </td>
-          <td style="width: 70% ; text-align:left;border-bottom: double;"> Lorem ipsum</td>
-          <td style="width: 29% ; text-align:right; border-bottom: double;">R$ 9,99</td>
-        </tr>
-        <tr>
-          <th style="border: none;">
-          </th>
-          <th style=" border: none;">Total</th>
-          <th style="border: none; text-align: right;">R$12.909,99</th>
-        </tr>
-        <tr>
-          <th style="border: none;"></th>
-          <th style="border: none;"></th>
-          <th style="border: none; text-align: right;">[LUCRO]</th>
-        </tr>
+          <th class="th_mercadoria" id="th_mercadoria" style="text-align: left;font-weight: bold; border-bottom: 1px solid #979797;">Mercadoria</th>
+          <th class="th_valor" style="text-align:end;font-weight: bold;border-bottom: 1px solid #979797;">Valor</th>        
+          <th style="border-bottom: 1px solid #979797;"></th> 
+                  
+        </tr>             
+
       </table>
     </div>
 
   </div>
   <footer class="rodape"></footer>
-
+  </div>
+  <script src="./asset/js/index.js"></script>
+  <script src="./asset/js/form.js"></script>
 </body>
 
 </html>

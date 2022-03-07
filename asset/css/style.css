@@ -119,7 +119,7 @@ img {
   font-weight: bold;
   font-size: 18px;
 }
-.container-main {
+.container_main {
   width: 400px;
   height: 344px;
   border: 1px solid #979797;
@@ -237,7 +237,7 @@ option {
     justify-content: center;
 }
 
-#tab_transacao {
+.tab_transacao {
   border-spacing: 0px;
 }
 
@@ -333,7 +333,7 @@ th {
   
   .container-main {
     border: 1px solid #979797;
-    width: 100%;
+    width: 97%;
     height: 190px;
     align-self: center;
   }
