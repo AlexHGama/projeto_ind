@@ -31,11 +31,11 @@
               X
             </div>
             <div>
-              <a class="lmercadoria" onclick="dirc_cursor_nome_mercadoria()">Cadastro de transações</a>
+              <a class="llmercadoria"  style="color: blue"; onclick="dirc_cursor_nome_mercadoria()">Cadastro de transações</a>
             </div>
             <ul class="divisor">
             <div>
-              <a class="Limpar dados" onclick="limpar()">Limpar dados</a>
+              <a class="Limpar dados"  style="color: blue"; onclick="limpar()">Limpar dados</a>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
   <!-- Inicio conteudo -->
   <div class="section">
     <!-- Inicio caixa nova transação -->
-    <div class="container_main" onsubmit="testacontainer_main(event);">
+    <div class="container_main";>
 
       <div class="nova">
         <h3 class="Nova_transacao"> Nova transação </h3>
@@ -71,7 +71,7 @@
 
         <div class="caixa_1">
           <label class="llvalor" for="lvalor">Valor</label>
-          <input class="valor" type="text" id="lvalor" onblur="testaCampoValor(this.value)" required name="valor" placeholder="R$ 0,00">
+          <input class="valor" type="text" id="lvalor" onblur="testaCampoValor(this.value)" required name="valor" placeholder="R$ 0,00" onkeypress="mascara(event)">
         </div>
 
       </div>
