@@ -1,7 +1,8 @@
-const mmascara = /[^0-9]/;
 
-    function mascara(e){
-        if(mmascara.test(e.key)){
+const mascara = /[^0-9]/;
+
+    function nmascara(e){
+        if(mascara.test(e.key)){
             e.preventDefault();
             return;
         }
@@ -23,26 +24,8 @@ const mmascara = /[^0-9]/;
        
     }
 
-//direcionar cursor no Nome Mercadoria.//    
-     
-function dirc_cursor_nome_mercadoria(){
-    document.getElementById("nmercadoria").focus();
-}
- 
-// Limpar dados extrato de transações//
-
-function limpar(){
-    let confirmar = confirm("Deseja apagar TODOS os dados!?!?");
-    if(confirmar){
-        mercadoria.splice([]);
-        localStorage.clear();
-        desenhatabela();
-    } 
-}    
- 
-
 
  
- 
+
 
  

@@ -11,21 +11,20 @@
 
 <body>
 
-    <!-- Inicio menu -->
-    <div class="global">
-      <header>
-        <div class="container_menu">
-          <div class="ellipse">
-            <div class="container-logo">
-              <img src="./asset/img/Ellipse.png" />
-              <h2 class="controle_financeiro_menu">Controle financeiro</h2>
+  <!-- Inicio menu -->
+  <div class="global">
+  <header>
+    <div class="container_menu">
+      <div class="ellipse">
+        <div class="container-logo">
+          <img src="./asset/img/Ellipse.png" />
+          <h2 class="controle_financeiro_menu">Controle financeiro</h2>
+        </div>
+        <div class="caixa_menu">
+          <div>
+            <div class="hamburguer">
+              <img src="./asset/img/hamburgue.png" />
             </div>
-            <div class="caixa_menu">
-              <div>
-                <div class="hamburguer">
-                  <img src="./asset/img/hamburgue.png" />
-                </div>
-              </div>
               <div class="lista_menu">
                 <div class="fechar">
                   X
@@ -35,17 +34,18 @@
                 </div>
                 <ul class="divisor">
                 <div>
-                  <a class="Limpar dados"  style="color: blue"; onclick="limpar()">Limpar dados</a>
+                  <a class="Limpar_dados"  style="color: blue"; onclick="limpar()">Limpar dados</a>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>           
+
         </div>
-      </header>
+        
+  </header>
     
-      <!-- Fim menu -->
-      <!-- Inicio conteudo -->
-      <div class="section">
+    <!-- Fim menu -->
+    <!-- Inicio conteudo -->
+    <div class="section">
         <!-- Inicio caixa nova transação -->
         <form class="container_main" onsubmit="testaFormulario(event);">
           
@@ -70,8 +70,8 @@
             </div>
     
             <div class="caixa_1">
-              <label class="llvalor" for="lvalor">Valor</label>
-              <input class="valor" type="text" id="lvalor"  required name="valor" placeholder="R$ 0,00" onkeypress="mascara(event)">
+            <label class="llvalor" for="lvalor">Valor</label>
+            <input class="valor" type="text" id="lvalor"  required name="valor" placeholder="R$ 0,00" onkeypress="mascara(event)">
             </div>
     
           </div>
@@ -103,11 +103,17 @@
         </div>    
       
       </div>
-      <footer class="rodape"></footer>
-      </div>
-      <!-- links-->
-      <script src="./asset/js/index.js"></script>
-      <script src="./asset/js/form.js"></script>
-    </body>
+
+  <footer class="rodape"></footer>
     
-    </html>
+  <!-- links-->
+  <script src="./asset/js/index.js"></script>
+  <script src="./asset/js/form.js"></script>
+  
+</body>
+    
+</html>
+
+    
+
+  
