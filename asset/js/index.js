@@ -1,8 +1,8 @@
 
-const mascara = /[^0-9]/;
+const nmascara = /[^0-9]/;
 
-    function nmascara(e){
-        if(mascara.test(e.key)){
+    function mascara(e){
+        if(nmascara.test(e.key)){
             e.preventDefault();
             return;
         }
