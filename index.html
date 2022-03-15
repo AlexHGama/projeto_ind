@@ -11,115 +11,103 @@
 
 <body>
 
-  <!-- Inicio menu -->
-  
-  <header>
-    <div class="container_menu">
-      <div class="ellipse">
-        <div class="container-logo">
-          <img src="./asset/img/Ellipse.png" />
-          <h2 class="controle_financeiro_menu">Controle financeiro</h2>
-        </div>
-        <div class="caixa_menu">
-          <div>
-            <div class="hamburguer">
-              <img src="./asset/img/hamburgue.png" />
+    <!-- Inicio menu -->
+    <div class="global">
+      <header>
+        <div class="container_menu">
+          <div class="ellipse">
+            <div class="container-logo">
+              <img src="./asset/img/Ellipse.png" />
+              <h2 class="controle_financeiro_menu">Controle financeiro</h2>
+            </div>
+            <div class="caixa_menu">
+              <div>
+                <div class="hamburguer">
+                  <img src="./asset/img/hamburgue.png" />
+                </div>
+              </div>
+              <div class="lista_menu">
+                <div class="fechar">
+                  X
+                </div>
+                <div>
+                  <a class="llmercadoria"  style="color: blue"; onclick="dirc_cursor_nome_mercadoria()">Cadastro de transações</a>
+                </div>
+                <ul class="divisor">
+                <div>
+                  <a class="Limpar dados"  style="color: blue"; onclick="limpar()">Limpar dados</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="lista_menu">
-            <div class="fechar">
-              X
-            </div>
-            <div>Cadastro de transações</div>
-            <div class="divisor">|</div>
-            <div>Limpar dados</div>
+        </div>
+      </header>
+    
+      <!-- Fim menu -->
+      <!-- Inicio conteudo -->
+      <div class="section">
+        <!-- Inicio caixa nova transação -->
+        <form class="container_main" onsubmit="testaFormulario(event);">
+          
+          <div class="nova">
+            <h3 class="Nova_transacao"> Nova transação </h3>
           </div>
-        </div>
+    
+          <div class="caixa_principal">
+    
+            <div class="caixa_1">
+              <label class="tipo" for="tipo de transação">Tipo de transação</label>
+    
+              <select class="formu" id="tipo de transacao" name="tipo_de_transação">
+                <option value="Compra">Compra</option>
+                <option value="Venda">Venda</option>
+              </select>
+            </div>
+    
+            <div class="caixa_2">
+              <label class="nmercadoria" for="nmercadoria">Nome da mercadoria</label>
+              <input class="lmercadoria" type="text" id="nmercadoria" onfocus="this.value=''; "placeholder="Input"   required name="nome_da_mercadoria" placeholder="Input">
+            </div>
+    
+            <div class="caixa_1">
+              <label class="llvalor" for="lvalor">Valor</label>
+              <input class="valor" type="text" id="lvalor"  required name="valor" placeholder="R$ 0,00" onkeypress="mascara(event)">
+            </div>
+    
+          </div>
+          <div class="botao">
+            <button class="button1">Adicionar transação</button>
+          </div>
+          <div id="linha-horizontal"></div>
+        </form>
+        <!-- Fim Caixa nova transação -->
+    
+        <!-- Inicio Extrato de transações -->
+    
+        <div class="container_extrato">
+          <h3 class="Extrato_de_transacoes"> Extrato de transações</h3>
+          <table class="tab_transacao" id="tab_transacao">
+            
+            <tr>
+              <th class="th_mercadoria" id="th_mercadoria" style="text-align: left;font-weight: bold; border-bottom: 1px solid #979797;">Mercadoria</th>
+              <th class="th_valor" style="text-align:end;font-weight: bold;border-bottom: 1px solid #979797;">Valor</th>        
+              <th style="border-bottom: 1px solid #979797;"></th> 
+                      
+            </tr>             
+        
+          
+            <div class="msgtransacoes" id="msgtransacoes" style="padding: 0;"></div>
+            <table id="tabmercadoria2" style="border-spacing: 10;" ></table>
+             
+          </table>       
+        </div>    
+      
       </div>
-    </div>
-  </header>
-
-  <!-- Fim menu -->
-  <!-- Inicio conteudo -->
-  <div class="section">
-    <!-- Inicio caixa nova transação -->
-    <div class="container-main">
-
-      <div class="nova">
-        <h3 class="Nova_transacao"> Nova transação </h3>
+      <footer class="rodape"></footer>
       </div>
-
-      <div class="caixa_principal">
-
-        <div class="caixa_1">
-          <label class="tipo" for="tipo de transação">Tipo de transação</label>
-
-          <select class="formu" id="tipo de transacao" name="tipo de  transação">
-            <option value="Compra">Compra</option>
-            <option value="Compra">Venda</option>
-          </select>
-        </div>
-
-        <div class="caixa_2">
-          <label class="nmercadoria" for="nmercadoria">Nome da mercadoria</label>
-          <input class="lmercadoria" type="text" id="nmercadoria" name="nome da mercadoria" placeholder="Input">
-        </div>
-
-        <div class="caixa_1">
-          <label class="llvalor" for="lvalor">Valor</label>
-          <input class="valor" type="text" id="lvalor" name="valor" placeholder="R$ 0,00">
-        </div>
-
-      </div>
-      <div class="botao">
-        <button class="button1">Adicionar transação</button>
-      </div>
-      <div id="linha-horizontal"></div>
-    </div>
-    <!-- Fim Caixa nova transação -->
-
-    <!-- Inicio Extrato de transações -->
-
-    <div class="container_extrato">
-      <h3 class="Extrato_de_transacoes"> Extrato de transações</h3>
-      <table id="tab_transacao">
-        <tr>
-          <th></th>
-          <th>Meradoria</th>
-          <th style="text-align: right;">Valor</th>
-        </tr>
-        <tr>
-          <td> + </td>
-          <td> Lorem ipsum dolor sit amet consectetur </td>
-          <td style="text-align: right;">R$ 12.999,99</td>
-        </tr>
-        <tr>
-          <td> - </td>
-          <td>Quis nostrud exercitation</td>
-          <td style="text-align: right;">R$99,99</td>
-        </tr>
-        <tr>
-          <td style="width: 1%; text-align:center;border-bottom: double;"> + </td>
-          <td style="width: 70% ; text-align:left;border-bottom: double;"> Lorem ipsum</td>
-          <td style="width: 29% ; text-align:right; border-bottom: double;">R$ 9,99</td>
-        </tr>
-        <tr>
-          <th style="border: none;">
-          </th>
-          <th style=" border: none;">Total</th>
-          <th style="border: none; text-align: right;">R$12.909,99</th>
-        </tr>
-        <tr>
-          <th style="border: none;"></th>
-          <th style="border: none;"></th>
-          <th style="border: none; text-align: right;">[LUCRO]</th>
-        </tr>
-      </table>
-    </div>
-
-  </div>
-  <footer class="rodape"></footer>
-
-</body>
-
-</html>
+      <!-- links-->
+      <script src="./asset/js/index.js"></script>
+      <script src="./asset/js/form.js"></script>
+    </body>
+    
+    </html>
