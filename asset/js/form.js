@@ -20,8 +20,8 @@ const formatacao = new Intl.NumberFormat('pt-Br', {style: 'currency', currency: 
     if(mercadoria.length == 0){
         document.querySelector("table.tab_transacao tbody").innerHTML =
        `
-      <div class="msgtransacoes" id="msgtransacoes" style="text-align: center;">
-       <p><p>Nenhuma transação cadastrada.</p></p>
+      <div class="msgtransacoes" id="msgtransacoes" style="text-align:center;">
+      <p><p><p><p>Nenhuma transação cadastrada.</p></p>
        </div>
        `
     }    
