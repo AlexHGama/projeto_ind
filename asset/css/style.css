@@ -397,6 +397,10 @@ th {
   .linha {
     display: none;
   }
+
+  .msgtransacoes { 
+    margin-top: -57px;
+  }
 }
 
 @media screen and (max-width: 411px) {
@@ -511,6 +515,10 @@ th {
   
   .Extrato_de_transacoes {
     
-    margin-top: 173px;
+    margin-top: 50px;
   }   
+
+  .msgtransacoes { 
+    margin-top: -50px;
+  }
 }
