@@ -37,7 +37,7 @@ header {
   justify-content: space-between;
   
 }
-.container-logo {
+.container_logo {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -319,7 +319,7 @@ th {
     width: 100%;
   }
 
-  .container-logo {
+  .container_logo {
     margin: inherit;
     width: 100%;
   }
@@ -331,10 +331,10 @@ th {
     flex-direction: column;
   }
   
-  .container-main {
+  .container_main {
     border: 1px solid #979797;
     width: 97%;
-    height: 190px;
+    height: 180px;
     align-self: center;
   }
 
@@ -457,9 +457,10 @@ th {
     flex-direction: column;
   }
   
-  .container-main {
+  .container_main {
     border: 0px solid #979797;
-    
+    width: 375px;
+    height: 320px;
   }
   
   
