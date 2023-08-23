@@ -53,7 +53,7 @@ img {
 .caixa_menu {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #333;
   height: 40px;
 }
 
@@ -232,7 +232,7 @@ option {
 }
 .Extrato_de_transacoes {
     display: flex;
-    margin-top: 18px;
+    margin-top: 25px;
     font-size: initial;
     justify-content: center;
 }
@@ -366,7 +366,7 @@ th {
   .Extrato_de_transacoes {
     display: flex;
     justify-content: center;
-    margin-top: 43px;
+    margin-top: 25px;
   }
 
   .caixa_principal {
@@ -418,7 +418,7 @@ th {
     
   }
    
-  .hamburguer, .fechar {
+  .hamburguer,.fechar {
     display: block;
   }
 
@@ -440,6 +440,8 @@ th {
   .lista_menu .divisor {
     display: none;
   }
+
+  
 
   .hamburguer.fechar {
     display: block;
@@ -515,7 +517,7 @@ th {
   
   .Extrato_de_transacoes {
     
-    margin-top: 50px;
+    margin-top: 30px;
   }   
 
   .msgtransacoes { 
